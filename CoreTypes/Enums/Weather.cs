@@ -39,6 +39,16 @@ namespace CSLab.CoreTypes.Enums
             return sb.ToString(); // Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday
         }
 
+        /// <summary>
+        /// <para>Displays all temperature specifications within a single string.</para>                        
+        /// <example>
+        /// <para>Example usage:</para>
+        /// <code>
+        /// WeatherClass.DisplayAllTemperatures();     
+        /// </code>
+        /// <para><strong>Output:</strong> FreezingPoint: 0, LightJacketWeather: 16, SwimmingWeather: 22, BoilingPoint: 100, NeutralZero: -18</para>
+        /// </example>       
+        /// </summary> 
         public static string DisplayAllTemperatures()
         {
             Dictionary<string, int> tempDict = new Dictionary<string, int>();
