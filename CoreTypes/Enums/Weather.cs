@@ -17,6 +17,16 @@ namespace CSLab.CoreTypes.Enums
             BoilingPoint = 100
         }
 
+        /// <summary>
+        /// <para>Extracts items of the enum list and returns an array containing string values.</para>                        
+        /// <example>
+        /// <para>Example usage:</para>
+        /// <code>
+        /// string [] weekDays = WeatherClass.GetDaysArray();     
+        /// </code>
+        /// <returns><strong>Returns:</strong> string[ ]</returns>        
+        /// </example>       
+        /// </summary> 
         public static string[] GetDaysArray()
         {
             string[] daysOfWeek = new string[Enum.GetValues(typeof(EnumDays)).Length];
@@ -27,8 +37,20 @@ namespace CSLab.CoreTypes.Enums
             return daysOfWeek;
         }
 
-        public static string DisplayAllDays(string[] daysOfWeek)
+        /// <summary>
+        /// <para>Displays all days of week within a single string.</para>                        
+        /// <example>
+        /// <para>Example usage:</para>
+        /// <code>
+        /// WeatherClass.DisplayAllDays();     
+        /// </code>
+        /// <returns><strong>Returns:</strong> string</returns>
+        /// </example>
+        /// </summary>
+        public static string DisplayAllDays()
         {
+            string[] daysOfWeek = GetDaysArray();
+
             StringBuilder sb = new StringBuilder();
             foreach (string day in daysOfWeek)
             {
@@ -46,8 +68,8 @@ namespace CSLab.CoreTypes.Enums
         /// <code>
         /// WeatherClass.DisplayAllTemperatures();     
         /// </code>
-        /// <para><strong>Output:</strong> FreezingPoint: 0, LightJacketWeather: 16, SwimmingWeather: 22, BoilingPoint: 100, NeutralZero: -18</para>
-        /// </example>       
+        /// <returns><strong>Returns:</strong> string</returns>
+        /// </example>
         /// </summary> 
         public static string DisplayAllTemperatures()
         {
@@ -66,7 +88,7 @@ namespace CSLab.CoreTypes.Enums
                 }
             }
 
-            return sb.ToString(); // FreezingPoint: 0, LightJacketWeather: 16, SwimmingWeather: 22, BoilingPoint: 100, NeutralZero: -18
+            return sb.ToString();
         }
 
     }

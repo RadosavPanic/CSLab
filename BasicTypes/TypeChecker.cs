@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using System.Runtime.InteropServices;
 
-namespace CSLab
+namespace CSLab.BasicTypes
 {
-    internal class TypesAndSizes
+    public class TypeChecker
     {
 
         /// <summary>
@@ -19,7 +19,7 @@ namespace CSLab
         /// </example>       
         /// </summary>        
         public static void DisplayTypeInternalName<T>()
-        { 
+        {
             Type type = typeof(T);
 
             Console.WriteLine($"Provided type \"{type.FullName}\" has internal class: {type.Name}");
@@ -35,7 +35,8 @@ namespace CSLab
         /// </code>        
         /// </example>       
         /// </summary>  
-        public static void DisplaySizeOfType<T>() {
+        public static void DisplaySizeOfType<T>()
+        {
             int size = Marshal.SizeOf(typeof(T));
 
             Console.WriteLine($"Provided type has size of {size} Bytes");
