@@ -1,5 +1,17 @@
-{
-  "ProductName": "Liquid Soap",
-  "DateTime": "2025-01-21T11:33:43.7927872Z",
-  "ProductPrice": 2.49
-}
+[
+  {
+    "ProductName": "Coca Cola",
+    "DateTime": "2025-01-21T13:45:51.8859108Z",
+    "ProductPrice": 1.83
+  },
+  {
+    "ProductName": "Liquid Soap",
+    "DateTime": "2025-01-21T13:50:10.8791284Z",
+    "ProductPrice": 2.49
+  },
+  {
+    "ProductName": "Toothbrush",
+    "DateTime": "2025-01-21T14:01:14.9988467Z",
+    "ProductPrice": 1.75
+  }
+]
