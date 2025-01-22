@@ -4,6 +4,7 @@ using TypeChecker = CSLab.BasicTypes.TypeChecker;
 using InterfaceMain = CSLab.CoreTypes.Interfaces.Main;
 using DelegateMain = CSLab.CoreTypes.Delegates.Main;
 using SerializationMain = CSLab.DataIntegrityAndState.Serialization.Main;
+using ListsMain = CSLab.Collections.Lists.Main;
 
 namespace CSLab
 {
@@ -14,6 +15,7 @@ namespace CSLab
             InterfaceMain.Run();
             DelegateMain.Run();            
             SerializationMain.Run();
+            ListsMain.Run();
         }
     }
 }
