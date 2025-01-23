@@ -13,9 +13,8 @@ namespace CSLab
         static void Main(string[] args)
         {
             InterfaceMain.Run();
-            DelegateMain.Run();            
-            SerializationMain.Run();
-            ListsMain.Run();
+            DelegateMain.Run();
+            SerializationMain.Run();            
         }
     }
 }
